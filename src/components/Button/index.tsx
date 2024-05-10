@@ -5,10 +5,9 @@ import { Container, Title, ButtonTypeStyleProps } from "./styles";
 type Props = TouchableOpacityProps & {
   title: string;
   type?: ButtonTypeStyleProps;
-  onPress: () => void;
 };
 
-export function Button({ title, type = "PRIMARY", onPress, ...rest }: Props) {
+export function Button({ title, type = "PRIMARY", ...rest }: Props) {
   return (
     <Container
       type={type}
